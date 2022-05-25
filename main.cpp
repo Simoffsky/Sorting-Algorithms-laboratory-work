@@ -94,7 +94,7 @@ void test(void sorting(vector<int>&), int NumberOfTests, int N) {
 
     for (int i = 0; i < NumberOfTests; ++i) {
         random_generator(v, N);
-        cout << "I started!" << endl;
+        
 
         startTime = clock();
         sorting(v);
@@ -111,7 +111,7 @@ void test(void sorting(vector<int>&), int NumberOfTests, int N) {
 int main(void) {
     
 
-    test(bubbleSortFlag, 10, 10000);
+    test(BucketSort, 10, 1000);
     
     
 }
